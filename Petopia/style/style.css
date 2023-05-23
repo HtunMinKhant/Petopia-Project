@@ -1,0 +1,101 @@
+:root{
+    --petopia: #ED6436;
+}
+
+
+.detail{
+    background-color: var(--petopia);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    border: 0;
+}
+.detail:hover{
+    background-color: transparent;
+    color: var(--petopia);
+    border: 1px solid var(--petopia);
+}
+
+.food{
+    text-decoration: none;
+    color: black;
+}
+
+.bg{
+    background-image: url('../img/services pic/Bgimg2.jpg');
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.bg::after{
+    content: ' ';
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+.content{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+    
+.bgabout {
+    background-image: url('../img/about pic/bgabout.jpg');
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.bgabout::after {
+    content: ' ';
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.text{
+    text-align: center;
+    margin: auto;
+}
+
+.bg-img{
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+    z-index: -1;
+}
+.wrapper{
+    height: 40px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.wrapper span{
+    width: 100%;
+    text-align: center;
+}
+.wrapper span.num{
+    border-left: 2px solid gray;
+    border-right: 2px solid grey;
+    pointer-events: none;
+}
+
+.payment:hover{
+    border: 1px solid #ED6436;
+}
